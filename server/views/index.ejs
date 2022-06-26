@@ -1,0 +1,33 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+  
+
+  <!-- Main Content -->
+  <main class="flex-shrink-0">
+    <div class="container mt-4 mb-2" style="background-color: rgb(43, 43, 43);">
+      <div class="row" style="height: 100%;">
+        <% if(title=="Home" ) { %>
+          <%- include partials/home %>
+            <%} else if(title=="About Me" ) { %>
+              <%- include partials/aboutme %>
+                <%} else if(title=="Services" ) { %>
+                  <%- include partials/services %>
+                    <%} else if(title=="Projects" ) { %>
+                      <%- include partials/projects %>
+                        <%} else if(title=="Contact" ) { %>
+                          <%- include partials/contactme %>
+                            <% } %>
+      </div>
+    </div>
+  </main>
+  
+<%- include partials/bottom_nav.ejs %>  
+
+<%- include partials/footer.ejs %>
+  
+
+
+
+
+
